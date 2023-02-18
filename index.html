@@ -1,120 +1,159 @@
 <!DOCTYPE html>
 <html>
 
-<!-- HEADER -->
-<header>
+<head>
     <title>RevoU SEFC Feb 2023</title>
     <link rel="stylesheet" href="CSS/index.css">
-
-    <nav>
-        <div class="logo">
-
-            <!-- EDIT GAMBAR -->
-            <img src="Assets/logo.png" style="height: 42px; width: 45px;">
-        </div>
-        <div id="menu">
-            <div class="home">Home</div>
-            <div class="search">Search</div>
-            <div class="login">Login</div>
-        </div>
-    </nav>
-</header>
-
-<!-- BODY -->
+</head>
 
 <body>
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="Assets/logo.png"></a>
+                <h4>Revolutionize You</h4>
+            </div>
+            <div class="menu">
+                <a href="index.html"><button class="home">Home</button></a>
+                <a href="profile.html"><button class="profile">Profile</button></a>
+                <a href="portfolio.html"><button class="portfolio">Portfolio</button></a>
+                <a href="contact.html"><button class="contact-us">Contact Us</button></a>
+            </div>
+        </nav>
+    </header>
 
-    <section id="welcome">
-        <div class="container">
+    <!-- MAIN -->
+    <main>
+
+        <section id="welcome">
+            <div class="container-welcome">
+
+                <div class="welcome-head">
+                    <h1>Hi Khalis, welcome to the Latihan Pertama Homepage</h1>
+                    <p>Ini website latihan pertama</p>
+                </div>
+                <figure class="banner">
+                    <!-- EDIT GAMBAR -->
+                    <img src="assets/Lofi.jpg" style="width: 1000px;">
+                </figure>
+            </div>
+        </section>
+
+        <section id="headquarters">
 
             <head>
-                <h1>Hi Khalis, welcome to the Latihan Pertama Homepage</h1>
-                <p>Ini website latihan pertama</p>
+                <h1>Our Headquarters</h1>
             </head>
-            <figure class="banner">
-                <img src="assets/Lofi.jpg" style="width: 1000px;">
-            </figure>
-        </div>
-    </section>
+            <div class="container-headquarter">
+                <figure>
+                    <img src="Assets/logo.png">
+                    <figcaption>Jakarta</figcaption>
+                </figure>
+                <figure>
+                    <img src="Assets/logo.png">
+                    <figcaption>Bogor</figcaption>
+                </figure>
+                <figure>
+                    <img src="Assets/logo.png">
+                    <figcaption>Depok</figcaption>
+                </figure>
+                <figure>
+                    <img src="Assets/logo.png">
+                    <figcaption>Tangerang</figcaption>
+                </figure>
+            </div>
+        </section>
 
-    <section id="headquarters">
+        <!-- MESSAGE US SECTION -->
+        <section id="message">
 
-        <head>
-            <h1>Our Headquarters</h1>
-        </head>
-        <div class="container">
-            <figure>
-                <img src="Assets/logo.png">
-                <figcaption>Jakarta</figcaption>
-            </figure>
-            <figure>
-                <img src="Assets/logo.png">
-                <figcaption>Bogor</figcaption>
-            </figure>
-            <figure>
-                <img src="Assets/logo.png">
-                <figcaption>Depok</figcaption>
-            </figure>
-            <figure>
-                <img src="Assets/logo.png">
-                <figcaption>Tangerang</figcaption>
-            </figure>
-            <figure>
-                <img src="Assets/logo.png">
-                <figcaption>Bekasi</figcaption>
-            </figure>
-        </div>
-    </section>
+            <head>
+                <h1>Message Us</h1>
+            </head>
 
-    <section id="message">
-        <head>
-            <h1>Message Us</h1>
-        </head>
-        <div class="message_input">
-            <form method="post">
-                <table>
-                    <tr>
-                        <td>Nama</td>
-                        <td>:</td>
-                        <td><input type="text" placeholder="Nama"></td>
-                    </tr>
-                    <tr>
-                        <td>Tanggal Lahir</td>
-                        <td>:</td>
-                        <td><input type="date" placeholder="Tanggal Lahir"></td>
-                    </tr>
-                    <tr>
-                        <td>Jenis Kelamin</td>
-                        <td>:</td>
-                        <td>
-                            <input type="radio" value="male">
-                            <label>Laki-laki</label>
-                            <input type="radio" value="female">
-                            <label>Perempuan</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Pesan</td>
-                        <td>:</td>
-                        <td><textarea placeholder="Pesan"></textarea></td>
-                    </tr>
-                </table>
-            </form>
-        </div>
-        <div class="message_preview">
-            <h4>Message Preview</h4>
-            <form>
-                <input type="text">
-            </form>
-        </div>
-    </section>
+            <div class="message-part">
 
+                <!-- MESSAGE INPUT FORM -->
+                <div class="message-input">
+                    <form>
+                        <table>
+                            <tr>
+                                <td>Name</td>
+                                <td>:</td>
+                                <td><input id="user-name" type="text" placeholder="Name"></td>
+                            </tr>
+                            <tr>
+                                <td>Birth Date</td>
+                                <td>:</td>
+                                <td><input id="birth-date" type="date" placeholder="Tanggal Lahir"></td>
+                            </tr>
+                            <tr>
+                                <td>Gender</td>
+                                <td>:</td>
+                                <td>
+                                    <input type="radio" name="gender" value="Male" checked>
+                                    <label>Male</label>
+                                    <input type="radio" name="gender" value="Female">
+                                    <label>Female</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Message</td>
+                                <td>:</td>
+                                <td><input type="text" id="user-message" placeholder="Message"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3"><button id="submit" type="button">Submit</button></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+
+                <!-- MESSAGE PREVIEW -->
+                <div class="message-preview">
+                    <h4>Message Preview</h4>
+                    <div class="message-preview-container">
+                        <p id="preview-box"></p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
 </body>
-
 <!-- FOOTER -->
 <footer>
     <p class="copyright">Khalis - 2023</p>
     <p class="revou">Powered by RevoU</p>
 </footer>
+
+<!-- DOM JS SCRIPT -->
+<script>
+    document.getElementById("submit").addEventListener("click", previewMessage)
+
+    function previewMessage() {
+        let userName = document.getElementById('user-name').value
+        let birthDate = document.getElementById('birth-date').value
+        let userMessage = document.getElementById('user-message').value
+
+        let userGender = document.getElementsByName('gender')
+
+        for (let i = 0; i < userGender.length; i++) {
+            if (userGender[i].checked) {
+                userGender = userGender[i].value
+            }
+        }
+
+        document.getElementById('preview-box').innerHTML =
+            "Name : " + userName + '<br>' +
+            "Birth Date : " + birthDate + '<br>' +
+            "Gender : " + userGender + '<br>' + '<br>' +
+            "Message : " + '<br>' + 
+            userMessage
+    }
+</script>
 
 </html>

@@ -20,4 +20,210 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-/* CSS FOR INDEX - HOMEPAGE */
+/* GENERAL STYLE */
+
+h1, p, h4, th, td, figcaption, button, input {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+	font-size: 40px;
+	margin-bottom: 30px;
+	padding-left: 30px;
+	font-weight: bold;
+	padding: 0px 50px 0px 50px;
+}
+
+td {
+	padding: 5px;
+	font-size: 25px;
+}
+
+figcaption {
+	font-size: 30px;
+}
+
+/* HEADER STYLE */
+
+.logo {
+	display: flex;
+	width: 500px;
+	align-items: center;
+	margin-left: 20px;
+	
+}
+
+.logo > h4  {
+	color: antiquewhite;
+	margin: 0px 5px 0px 5px;
+	height: fit-content;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.logo > a > img {
+	width: 100px;
+}
+
+nav {
+	display: flex;
+	background-color: rgb(50, 50, 50);
+	height: 120px;
+	box-shadow: 0 5px 5px rgba(13, 13, 13, 0.345);;
+	
+}
+
+header {
+	position: fixed;
+	width: 100%;
+}
+
+.menu {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: 100%;
+	margin-right: 20px;
+
+}
+
+.menu > a > button {
+	padding: 20px;
+	background-color: rgb(255, 188, 3);
+	margin: 0px 5px 0px 5px;
+	width: 150px;
+	height: 60px;
+	text-align: center;
+	font-size: large;
+	font-weight: bold;
+}
+
+.menu > a > button:hover {
+	background-color: rgb(189, 140, 7);
+	text-align: center;
+	color: white;
+}
+
+
+/* MAIN BODY STYLE */
+
+main {
+	padding-top: 200px;
+}
+
+.container-welcome > figure {
+	display: flex;
+	justify-content: center;
+	margin: 100px 0 100px 0;
+}
+
+.welcome-head > p {
+	padding: 0px 50px 20px 50px;
+}
+
+.welcome-head > p {
+	font-size: 30px;
+}
+
+
+/* HEADQUARTER STYLE */
+
+.container-headquarter > figure > img {
+	width: 300px;
+}
+
+.container-headquarter {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.container-headquarter > figure {
+	text-align: center;
+	margin: 0 50px 0 50px;
+}
+
+
+/* MESSAGE STYLE */
+
+#message {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.message-preview-container {
+	border: 1px solid black; 
+	min-height: 180px;
+	max-height: fit-content;
+	margin-top: 5px;
+}
+
+#user-name, #birth-date, #user-message {
+	width: 490px;
+	height: 35px;
+	font-size: 20px;
+}
+
+#preview-box {
+	word-wrap: break-word;
+	padding: 10px;
+
+}
+
+.message-part {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin: 0 50px 0 50px;
+}
+
+.message-preview {
+	width: 630px;
+}
+
+.message-input {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+input[type=radio] {
+	width: 20px;
+	height: 20px;
+}
+
+h4 {
+	font-size: 25px;
+}
+
+#submit {
+	margin-top: 5px;
+	width: 100%;
+	height: 35px;
+	font-size: 17px;
+	background-color: rgb(255, 188, 3);
+	font-weight: bold;
+}
+
+#submit:hover {
+	margin-top: 5px;
+	width: 100%;
+	height: 35px;
+	font-size: 17px;
+	background-color: rgb(204, 150, 0);
+	color: white;
+}
+
+/* FOOTER STYLE */
+
+footer {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgb(50, 50, 50);
+	height: 70px;
+}
+
+footer > p {
+	color: white;
+}
