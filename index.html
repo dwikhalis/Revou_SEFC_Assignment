@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
@@ -7,6 +8,7 @@
 </head>
 
 <body>
+
     <!-- HEADER -->
     <header>
         <nav>
@@ -30,8 +32,15 @@
             <div class="container-welcome">
 
                 <div class="welcome-head">
-                    <h1>Hi Khalis, welcome to the Latihan Pertama Homepage</h1>
-                    <p>Ini website latihan pertama</p>
+                    <h1><span id="guest">Hi,</span> welcome to RevoU<br>
+                        Software Engineering : <br>
+                        <span class="fc">
+                            <a href="https://revou.co/fundamental-course-software-engineering?
+                            utm_source=referral&utm_medium=advocacy&
+                            utm_campaign=minicourse&refcode=khalllah">
+                                <u>Fundamental Course</u></a></span>
+                    </h1>
+                    <p>This website is one of our student's assignment</p>
                 </div>
                 <figure class="banner">
                     <!-- EDIT GAMBAR -->
@@ -121,39 +130,35 @@
             </div>
 
         </section>
-
     </main>
 </body>
+
 <!-- FOOTER -->
 <footer>
     <p class="copyright">Khalis - 2023</p>
     <p class="revou">Powered by RevoU</p>
 </footer>
 
+<!-- POP UP BLINDER INPUT NAME -->
+
+<div id="popup-blinder"></div>
+
+<div id="input-name">
+    <div class="popup-logo">
+        <img src="Assets/logo.png">
+        <div class="popup-devider"></div>
+    </div>
+    <form name="input-guest-name">
+        <label class="popup-message"> Hello, nama kamu siapa ?</label>
+        <br>
+        <input class="popup-message" name="guest-name" type="text">
+    </form>
+</div>
+
+<a id="popup-close" href="index.html">X</a>
+
+
 <!-- DOM JS SCRIPT -->
-<script>
-    document.getElementById("submit").addEventListener("click", previewMessage)
-
-    function previewMessage() {
-        let userName = document.getElementById('user-name').value
-        let birthDate = document.getElementById('birth-date').value
-        let userMessage = document.getElementById('user-message').value
-
-        let userGender = document.getElementsByName('gender')
-
-        for (let i = 0; i < userGender.length; i++) {
-            if (userGender[i].checked) {
-                userGender = userGender[i].value
-            }
-        }
-
-        document.getElementById('preview-box').innerHTML =
-            "Name : " + userName + '<br>' +
-            "Birth Date : " + birthDate + '<br>' +
-            "Gender : " + userGender + '<br>' + '<br>' +
-            "Message : " + '<br>' + 
-            userMessage
-    }
-</script>
+<script src="JS/index.js"></script>
 
 </html>

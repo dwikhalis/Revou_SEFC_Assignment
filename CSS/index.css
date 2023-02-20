@@ -22,6 +22,10 @@ time, mark, audio, video {
 
 /* GENERAL STYLE */
 
+body {
+	background-color: rgb(243, 243, 243);
+}
+
 h1, p, h4, th, td, figcaption, button, input {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -69,8 +73,7 @@ nav {
 	display: flex;
 	background-color: rgb(50, 50, 50);
 	height: 120px;
-	box-shadow: 0 5px 5px rgba(13, 13, 13, 0.345);;
-	
+	box-shadow: 0 5px 5px rgba(13, 13, 13, 0.345);	
 }
 
 header {
@@ -89,19 +92,35 @@ header {
 
 .menu > a > button {
 	padding: 20px;
-	background-color: rgb(255, 188, 3);
+	background-color: rgb(255, 213, 0);
 	margin: 0px 5px 0px 5px;
 	width: 150px;
-	height: 60px;
+	height: 70px;
 	text-align: center;
-	font-size: large;
+	font-size: 20px;
 	font-weight: bold;
 }
 
 .menu > a > button:hover {
-	background-color: rgb(189, 140, 7);
+	background-color: rgb(239, 199, 0);
 	text-align: center;
 	color: white;
+}
+
+.fc {
+	font-style: italic;
+	font-size: 35px;
+	font-weight: 700;
+	padding: 0 10px 5px 10px;
+	background-color: black;
+}
+
+.fc > a {
+	color: rgb(255, 213, 0);
+}
+
+.fc > a:hover {
+	color: rgb(255, 174, 0);
 }
 
 
@@ -140,7 +159,7 @@ main {
 
 .container-headquarter > figure {
 	text-align: center;
-	margin: 0 50px 0 50px;
+	margin: 50px 50px 0 50px;
 }
 
 
@@ -167,6 +186,7 @@ main {
 #preview-box {
 	word-wrap: break-word;
 	padding: 10px;
+	font-size: 18px;
 
 }
 
@@ -200,7 +220,7 @@ h4 {
 	width: 100%;
 	height: 35px;
 	font-size: 17px;
-	background-color: rgb(255, 188, 3);
+	background-color: rgb(255, 213, 0);
 	font-weight: bold;
 }
 
@@ -209,7 +229,7 @@ h4 {
 	width: 100%;
 	height: 35px;
 	font-size: 17px;
-	background-color: rgb(204, 150, 0);
+	background-color: rgb(239, 199, 0);
 	color: white;
 }
 
@@ -222,8 +242,73 @@ footer {
 	align-items: center;
 	background-color: rgb(50, 50, 50);
 	height: 70px;
+	box-shadow: 0px -10px 10px rgba(13, 13, 13, 0.288);
 }
 
 footer > p {
 	color: white;
 }
+
+/* POP UP INPUT NAME */
+
+#popup-blinder {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.345);
+}
+
+#input-name {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+  	left: 0;
+  	right: 0;
+  	bottom: 0;
+  	top: 75%;
+  	background-color: white;
+}
+
+.popup-logo {
+	display: flex;
+	align-items: center;
+}
+
+.popup-logo > img {
+	height: 100px;
+}
+
+.popup-devider {
+	width: 3px;
+	height: 70px;
+	background-color: black;
+	margin: 20px;
+}
+
+.popup-message {
+	font-size: 25px;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	margin: 5px;
+}
+
+#popup-close {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+  	left: 96%;
+  	top: 77%;
+  	border: 1px solid black;
+	border-radius: 20%;
+	width: 20px;
+	font-size: large;
+	font-family: Geneva, Verdana, sans-serif;
+	font-weight: 500;
+	text-decoration: none;
+	color: black;
+	padding: 2px 2px 2px 2px;
+}
+
