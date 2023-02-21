@@ -178,6 +178,12 @@ main {
 	margin-bottom: 100px;
 }
 
+#constraint-alert {
+	text-align: center;
+	font-size: 20px;
+	color: red;
+}
+
 .message-preview-container {
 	border: 1px solid black; 
 	min-height: 180px;
