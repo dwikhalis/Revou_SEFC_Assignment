@@ -110,6 +110,11 @@ header {
 	font-size: large;
 }
 
+#course:hover {
+	background-color: rgb(154, 229, 40);
+	font-size: large;
+}
+
 .fc {
 	font-style: italic;
 	font-size: 35px;

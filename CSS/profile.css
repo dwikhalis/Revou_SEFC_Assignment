@@ -116,28 +116,21 @@ header {
 	font-size: large;
 }
 
-.fc {
-    font-style: italic;
-    font-size: 35px;
-    font-weight: 700;
-    padding: 0 10px 5px 10px;
-    background-color: black;
+#course:hover {
+	background-color: rgb(154, 229, 40);
+	font-size: large;
 }
-
-.fc > a {
-    color: rgb(255, 213, 0);
-}
-
-.fc > a:hover {
-    color: rgb(255, 174, 0);
-}
-
 
 /* PROFILE SECTION STYLE */
 
 main {
     padding-top: 120px;
 }
+
+.black-yellow {
+    background-color: rgb(32, 32, 32);
+    color: rgb(255, 213, 0);
+} 
 
 .profile-head {
     padding-top: 80px;
