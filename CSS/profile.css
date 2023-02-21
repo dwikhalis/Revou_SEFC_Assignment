@@ -26,14 +26,7 @@ body {
     background-color: rgb(243, 243, 243);
 }
 
-h1,
-p,
-h4,
-th,
-td,
-figcaption,
-button,
-input {
+h1,p,h4,th,td,figcaption,button,input {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -68,7 +61,7 @@ figcaption {
 
 }
 
-.logo>h4 {
+.logo > h4 {
     color: antiquewhite;
     margin: 0px 5px 0px 5px;
     height: fit-content;
@@ -76,7 +69,7 @@ figcaption {
     font-weight: bold;
 }
 
-.logo>a>img {
+.logo > a > img {
     width: 100px;
 }
 
@@ -101,7 +94,7 @@ header {
 
 }
 
-.menu>a>button {
+.menu > a >button {
     padding: 20px;
     background-color: rgb(255, 213, 0);
     margin: 0px 5px 0px 5px;
@@ -112,7 +105,7 @@ header {
     font-weight: bold;
 }
 
-.menu>a>button:hover {
+.menu > a > button:hover {
     background-color: rgb(239, 199, 0);
     text-align: center;
     color: white;
@@ -131,11 +124,11 @@ header {
     background-color: black;
 }
 
-.fc>a {
+.fc > a {
     color: rgb(255, 213, 0);
 }
 
-.fc>a:hover {
+.fc > a:hover {
     color: rgb(255, 174, 0);
 }
 
@@ -175,7 +168,7 @@ main {
     margin-left: 50px;
 }
 
-#culture>h1 {
+#culture > h1 {
     font-size: 30px;
     padding: 0;
 }
@@ -187,7 +180,7 @@ main {
     margin-bottom: 50px;
 }
 
-.culture-card>img {
+.culture-card > img {
     width: 450px;
     height: 270px;
 }
@@ -198,7 +191,7 @@ main {
     justify-content: space-evenly;
 }
 
-.culture-menu>div {
+.culture-menu > div {
     display: flex;
     background-color: rgb(255, 213, 0);
     align-items: center;
@@ -208,9 +201,20 @@ main {
     border: 2px solid rgb(239, 239, 239);
 }
 
-.culture-menu>div>p {
-    text-align: center;
+.culture-menu > button {
+    display: flex;
+    background-color: rgb(255, 213, 0);
+    align-items: center;
+    height: 40px;
+    justify-content: center;
+    flex-grow: 1;
+    border: 2px solid rgb(239, 239, 239);
     font-weight: bold;
+}
+
+.culture-menu > button:hover {
+    background-color: rgb(239, 199, 0);
+	color: white;
 }
 
 .culture-row {
@@ -218,11 +222,11 @@ main {
     margin-bottom: 30px;
 }
 
-.card-caption>h1 {
+.card-caption > h1 {
     margin: 0;
 }
 
-.card-caption>p {
+.card-caption > p {
     font-size: 30px;
     margin-left: 50px;
     margin-right: 60px;
@@ -240,6 +244,6 @@ footer {
     box-shadow: 0px -10px 10px rgba(13, 13, 13, 0.288);
 }
 
-footer>p {
+footer > p {
     color: white;
 }
