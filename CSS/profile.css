@@ -48,7 +48,6 @@ figcaption {
 
 .logo {
     display: flex;
-    width: 500px;
     align-items: center;
     margin-left: 20px;
 
@@ -233,33 +232,9 @@ footer > p {
     color: white;
 }
 
-@media only screen and (max-width: 425px) {
-    
-    /* REVAMP CULTURE MENU */
-    #culture {
-        display: flex;
-        flex-direction: column;
-        margin: 40px;
-    }
-    
-    .culture-menu {
-        display: flex;
-        flex-wrap: wrap;
-    }
 
-    .culture-card {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-        margin-bottom: 10px;
-    }
 
-    .culture-row {
-        width: 100%;
-    }
-   
-}
+
 
 @media only screen and (max-width: 800px) {
 	
@@ -368,4 +343,148 @@ footer > p {
 	#burger-dropdown {
 		display: none;
 	}
+}
+
+@media only screen and (max-width: 425px) {
+    
+    /* RESIZE NAV */
+	.logo > a > img {
+		width: 70px;
+	}
+
+	/* RESIZE WELCOME */
+	h1 {
+		font-size: 25px;
+		margin-bottom: 15px;
+	}
+
+	.fc {
+		font-size: 25px;
+	}
+
+	.welcome-head > p {
+		font-size: 20px;
+	}
+
+	.logo > h4 {
+		font-size: medium;
+	}
+
+    /* RESIZE CAPTION */
+    .card-caption > p {
+		font-size: large;
+	}
+    
+    /* REVAMP RESIZE CULTURE MENU */
+    #culture {
+        display: flex;
+        flex-direction: column;
+        margin: 40px;
+    }
+    
+    .culture-menu {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .culture-card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10px;
+    }
+
+    .culture-row {
+        width: 100%;
+    }
+
+    .culture-menu > button {
+        font-size: medium;
+        height: 40px;
+    }
+   
+}
+
+@media only screen and (max-width: 320px) {
+
+	/* RESIZE NAV */
+	nav {
+		height: 70px;
+	}
+	
+	.logo > a > img {
+		width: 50px;
+	}
+
+	.logo > h4 {
+		font-size: small;
+	}
+
+
+	/* RESIZE WELCOME */
+	h1 {
+		font-size: 20px;
+		margin-bottom: 15px;
+	}
+
+    .profile-head {
+        padding-top: 50px;
+    }
+
+    .profile-header {
+        font-size: 20px;
+    }
+
+	.fc {
+		font-size: 20px;
+	}
+
+	.welcome-head > p {
+		font-size: 15px;
+	}
+
+    /* RESIZE MENU BUTTON */
+    .culture-menu > button {
+        font-size: small;
+        height: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 356px) {
+		
+	/* POSITION MAIN */
+	main {
+		padding-top: 70px;
+	}
+		
+	/* RESIZE NAV */
+	nav {
+		height: 70px;
+	}
+		
+	.logo > a > img {
+		width: 40px;
+	}
+
+	/* RESIZE WELCOME */
+	h1 {
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+
+	.fc {
+		font-size: 20px;
+	}
+
+	.welcome-head > p {
+		font-size: 15px;
+		padding-bottom: 7px;
+	}
+
+	.logo > h4 {
+		font-size: medium;
+	}
+
 }

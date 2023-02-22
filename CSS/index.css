@@ -255,6 +255,8 @@ h4 {
 	font-size: 17px;
 	background-color: rgb(255, 213, 0);
 	font-weight: bold;
+	border: 1px solid black;
+	border-radius: 7px;
 }
 
 #submit:hover {
@@ -359,6 +361,7 @@ footer > p {
 }
 
 @media only screen and (max-width: 615px) {
+	
 	/* REVAMP POPUP */
 	.popup-message {
 		font-size: 20px;
@@ -384,21 +387,37 @@ footer > p {
 	}
 }
 
-@media only screen and (min-width: 1024px) {
-
-	/* REVAMP POPUP */
-	.popup-logo > img, .popup-divider {
-		height: 140px;
-	}
-
-	.popup-message {
-		height: 50px;
-		font-size: 35px;
-		width: 600px;
-	}
-}
 
 @media only screen and (max-width: 800px) {
+	
+	/* RESIZE FIGURE */
+	.container-headquarter > figure {
+		margin: 50px 10px 0 10px;
+	}
+
+	.container-headquarter > figure > img {
+		width: 150px;
+		height: 150px;
+	}
+
+	.container-headquarter > figure > figcaption {
+		font-size: large;
+	}
+
+	/* POSITIONING MESSAGE */
+
+	#message {
+		margin-top: 70px;
+	}
+
+	#message > h1 {
+		margin-bottom: 0;
+	}
+
+	input {
+		text-align: center;
+	}
+
 	
 	/* REVAMP FORM */
 	.col-1, .col-3 {
@@ -410,6 +429,12 @@ footer > p {
 	}
 
 	#submit {
+		margin-top: 30px;
+		height: 50px;
+		font-size: 20px;
+	}
+
+	#submit:hover {
 		margin-top: 30px;
 		height: 50px;
 		font-size: 20px;
@@ -504,8 +529,236 @@ footer > p {
 	
 }
 
+@media only screen and (min-width: 1017px) {
+
+	/* REVAMP POPUP */
+	.popup-logo > img, .popup-divider {
+		height: 140px;
+	}
+
+	.popup-message {
+		height: 50px;
+		font-size: 35px;
+		width: 600px;
+	}
+
+}
+
+@media only screen and (max-width: 1017px) {
+
+	/* RESIZE FIGURE */
+
+	.container-headquarter > figure > img {
+		width: 200px;
+		height: 200px;
+	}
+
+	.container-headquarter > figure > figcaption {
+		font-size: large;
+	}
+
+}
+
+
+
+@media only screen and (max-width: 425px) {
+
+	/* RESIZE NAV */
+	.logo > a > img {
+		width: 70px;
+	}
+
+	.logo > h4 {
+		font-size: medium;
+	}
+	
+	/* RESIZE WELCOME */
+	h1 {
+		font-size: 25px;
+		margin-bottom: 15px;
+	}
+
+	.fc {
+		font-size: 25px;
+	}
+
+	.welcome-head > p {
+		font-size: 20px;
+	}
+
+
+	/* RESIZE GENDER */
+	.col-3 > div > input[type=radio]{
+		height: 30px;
+		width: 30px;
+		margin: 0 10px 0 10px;
+	}
+
+	/* RESIZE FIGURE */
+
+	.container-headquarter > figure > img {
+		width: 150px;
+		height: 150px;
+	}
+
+	.container-headquarter > figure > figcaption {
+		font-size: large;
+	}
+
+}
+
 @media only screen and (min-width:800px) {
 	#burger-dropdown {
 		display: none;
 	}
+}
+
+
+@media only screen and (max-width: 320px) {
+
+	/* POSITION MAIN */
+	main {
+		padding-top: 120px;
+	}
+	
+	/* RESIZE NAV */
+	nav {
+		height: 70px;
+	}
+	
+	.logo > a > img {
+		width: 50px;
+	}
+
+	.logo > h4 {
+		font-size: small;
+	}
+
+
+	/* RESIZE WELCOME */
+	h1 {
+		font-size: 20px;
+		margin-bottom: 15px;
+	}
+
+	.fc {
+		font-size: 20px;
+	}
+
+	.welcome-head > p {
+		font-size: 15px;
+	}
+
+	
+	/* RESIZE GENDER */
+	.col-3 > div > input[type=radio]{
+		height: 20px;
+		width: 20px;
+		margin: 0 10px 0 10px;
+	}
+
+	/* RESIZE FIGURE */
+
+	.container-headquarter > figure > img {
+		width: 100px;
+		height: 100px;
+	}
+
+	.container-headquarter > figure > figcaption {
+		font-size: large;
+	}
+
+}
+
+@media only screen and (max-width: 356px) {
+		
+	/* POSITION MAIN */
+	main {
+		padding-top: 100px;
+	}
+		
+	/* RESIZE NAV */
+	nav {
+		height: 70px;
+	}
+		
+	.logo > a > img {
+		width: 40px;
+	}
+
+	/* RESIZE WELCOME */
+	h1 {
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+
+	.fc {
+		font-size: 20px;
+	}
+
+	.welcome-head > p {
+		font-size: 15px;
+		padding-bottom: 7px;
+	}
+
+	.logo > h4 {
+		font-size: medium;
+	}
+
+	/* RESIZE MESSAGE */
+	
+	#message {
+		margin-bottom: 50px;
+	}
+	
+	.message-input {
+		margin-top: 10px;
+    	margin-bottom: 15px;
+	}
+	
+	td {
+		font-size: 15px;
+	}
+
+	#user-name, #birth-date, #user-message {
+		font-size: 15px;
+		height: 30px;
+	}
+
+	#submit {
+		margin-top: 20px;
+    	height: 40px;
+    	font-size: 15px;
+	}
+
+	h4 {
+		font-size: 20px;
+	}
+
+	#constraint-alert {
+		font-size: 15px;
+	}
+	
+	/* RESIZE GENDER */
+	.col-3 > div > input[type=radio]{
+		height: 20px;
+		width: 20px;
+		margin: 0 5px 0 5px;
+	}
+
+	.col-3 > div > label{
+		font-size: large;
+	}
+
+	/* RESIZE MESSAGE PREVIEW */
+	.message-preview {
+		margin-top: 10px;
+	}
+
+	#preview-box {
+		word-wrap: break-word;
+		padding: 5px;
+		font-size: 12px;
+	}
+
 }
