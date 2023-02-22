@@ -559,10 +559,13 @@ footer > p {
 
 }
 
-
-
 @media only screen and (max-width: 425px) {
 
+	/* POSITIONING MAIN */
+	main {
+		padding-top: 160px;
+	}
+	
 	/* RESIZE NAV */
 	.logo > a > img {
 		width: 70px;
@@ -586,16 +589,7 @@ footer > p {
 		font-size: 20px;
 	}
 
-
-	/* RESIZE GENDER */
-	.col-3 > div > input[type=radio]{
-		height: 30px;
-		width: 30px;
-		margin: 0 10px 0 10px;
-	}
-
 	/* RESIZE FIGURE */
-
 	.container-headquarter > figure > img {
 		width: 150px;
 		height: 150px;
@@ -605,12 +599,62 @@ footer > p {
 		font-size: large;
 	}
 
+	/* RESIZE MESSAGE FORM */
+	#constraint-alert {
+		font-size: 14px;
+		justify-content: center;
+	}
+
+	.col-1 {
+		font-size: 16px;
+	}
+
+	#user-name, #birth-date, #user-message {
+		font-size: 14px;
+		height: 30px;
+	}
+
+	/* RESIZE GENDER */
+	.col-3 > div > input[type=radio]{
+		height: 20px;
+		width: 20px;
+		margin: 0 10px 0 10px;
+	}
+
+	.col-3 > div > label {
+		font-size: 18px;
+	}
+
+	#submit {
+		height: 35px;
+		margin-top: 15px;
+		font-size: medium;
+	}
+
+	#submit:hover {
+		height: 35px;
+		margin-top: 15px;
+		font-size: medium;
+	}
+
+	.message-preview {
+		margin-top: 5px;
+	}
+
+	h4 {
+		font-size: 18px;
+	}
+
+	#message {
+		margin-bottom: 50px;
+	}
 }
 
 @media only screen and (min-width:800px) {
 	#burger-dropdown {
 		display: none;
 	}
+	
 }
 
 

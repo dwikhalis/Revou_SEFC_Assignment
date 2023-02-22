@@ -306,7 +306,12 @@ footer > p {
 
 @media only screen and (max-width: 425px) {
     
-    /* RESIZE NAV */
+    /* POSITIONING MAIN */
+	main {
+		padding-top: 170px;
+	}
+	
+	/* RESIZE NAV */
 	.logo > a > img {
 		width: 70px;
 	}
