@@ -1,17 +1,5 @@
 /* CSS RESET */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+* {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -30,17 +18,19 @@ h1, p, h4, th, td, figcaption, button, input {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+input {
+	border: 1px solid black;
+	border-radius: 5px;
+	width: 100%;
+	height: 100%;
+}
+
 h1 {
 	font-size: 40px;
 	margin-bottom: 30px;
 	padding-left: 30px;
 	font-weight: bold;
 	padding: 0px 50px 0px 50px;
-}
-
-td {
-	padding: 5px;
-	font-size: 25px;
 }
 
 figcaption {
@@ -51,7 +41,6 @@ figcaption {
 
 .logo {
 	display: flex;
-	width: 500px;
 	align-items: center;
 	margin-left: 20px;
 	
@@ -188,6 +177,33 @@ main {
 	color: red;
 }
 
+td {
+	display: flex;
+	align-items: center;
+	padding: 5px;
+	font-size: 25px;
+}
+
+tr {
+	display: flex;
+}
+
+.col-1 {
+	width: 200px
+}
+
+.col-2 {
+	width: fit-content;
+}
+
+.col-3 {
+	width: 100%;
+}
+
+.row-submit {
+	width: 100%;
+}
+
 .message-preview-container {
 	border: 1px solid black; 
 	min-height: 180px;
@@ -196,8 +212,7 @@ main {
 }
 
 #user-name, #birth-date, #user-message {
-	width: 490px;
-	height: 35px;
+	width: 100%;
 	font-size: 20px;
 }
 
@@ -205,7 +220,6 @@ main {
 	word-wrap: break-word;
 	padding: 10px;
 	font-size: 18px;
-
 }
 
 .message-part {
@@ -216,7 +230,8 @@ main {
 }
 
 .message-preview {
-	width: 630px;
+	width: 50%;
+	margin-top: 35px;
 }
 
 .message-input {
@@ -280,7 +295,6 @@ footer > p {
 
 #input-name {
 	display: flex;
-	justify-content: center;
 	align-items: center;
 	position: fixed;
   	left: 0;
@@ -293,13 +307,15 @@ footer > p {
 .popup-logo {
 	display: flex;
 	align-items: center;
+	width: 100%;
+	justify-content: flex-end;
 }
 
 .popup-logo > img {
 	height: 100px;
 }
 
-.popup-devider {
+.popup-divider {
 	width: 3px;
 	height: 70px;
 	background-color: black;
@@ -310,13 +326,15 @@ footer > p {
 	font-size: 25px;
 	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	margin: 5px;
+	width: 300px;
+	height: 40px;
 }
 
-#popup-close {
+.popup-x {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	position: fixed;
+	/* position: fixed; */
   	left: 96%;
   	top: 77%;
   	border: 1px solid black;
@@ -330,3 +348,164 @@ footer > p {
 	padding: 2px 2px 2px 2px;
 }
 
+#popup-close {
+	display: flex;
+	justify-content: flex-end;
+	align-items: start;
+	width: 70%;
+	height: 100%;
+	margin-right: 10px;
+	margin-top: 20px;
+}
+
+@media only screen and (max-width: 615px) {
+	/* REVAMP POPUP */
+	.popup-message {
+		font-size: 20px;
+		font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		margin: 5px;
+		width: 100%;
+		height: 40px;
+	}
+
+	.popup-logo > img{
+		display: none;
+	}
+
+	.popup-logo {
+		width: 20%;
+	}
+	
+	#popup-close {
+		width: 30%;
+		height: 100%;
+		margin-right: 10px;
+		margin-top: 20px;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+
+	/* REVAMP POPUP */
+	.popup-logo > img, .popup-divider {
+		height: 140px;
+	}
+
+	.popup-message {
+		height: 50px;
+		font-size: 35px;
+		width: 600px;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	
+	/* REVAMP FORM */
+	.col-1, .col-3 {
+		width: 100%;
+	}
+
+	input {
+		height: 50px;
+	}
+
+	#submit {
+		margin-top: 30px;
+		height: 50px;
+		font-size: 20px;
+	}
+
+	.col-3 {
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	.col-3 > div {
+		display: flex;
+		align-items: center;
+	}
+
+	.col-2 {
+		display: none;
+	}
+
+	tr {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.message-input, form, table {
+		width: 100%;
+	}
+
+	.col-3 > div > input[type=radio]{
+		height: 40px;
+		width: 40px;
+		margin: 0 20px 0 20px;
+	}
+
+	.message-preview {
+		width: 100%;
+	}
+
+	/* NAVBAR to BURGER */
+	.menu {
+		display: none;
+	}
+
+	.stripe {
+		background-color: rgb(255, 255, 255);
+		width: 20px;
+		padding: 2px;
+		margin: 3px;
+	}
+
+	.burger {
+		display: flex;
+		justify-content: flex-end;
+		width: 100%;
+	}
+
+	.burger > button {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100px;
+		background-color: rgba(0, 0, 0, 0);
+		border-color: rgba(0, 0, 0, 0);
+	}
+
+	#burger-dropdown {
+		display: none;
+		flex-direction: column;
+	}
+
+	.menu-burger {
+		padding: 20px;
+		background-color: rgb(99, 99, 99);
+		width: 100%;
+		text-align: center;
+		font-size: 20px;
+		font-weight: bold;
+		border-color: rgba(126, 126, 126, 0);
+		color: rgb(255, 255, 255);
+	}
+
+	#course {
+		padding: 20px;
+		background-color: rgb(79, 79, 79);
+		width: 100%;
+		text-align: center;
+		font-size: 20px;
+		font-weight: bold;
+		border-color: rgba(0, 0, 0, 0);
+	}
+	
+}
+
+@media only screen and (min-width:800px) {
+	#burger-dropdown {
+		display: none;
+	}
+}
