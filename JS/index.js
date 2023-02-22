@@ -1,3 +1,21 @@
+//! BURGER DROPDOWN
+document.getElementById("burger-button").addEventListener("click", burgerDrop)
+
+let drop = true
+
+function burgerDrop (event) {
+    
+    if (event.isTrusted === true && drop === true) {
+        document.getElementById('burger-dropdown').style.display = 'flex'
+        drop = false
+    } else {
+        document.getElementById('burger-dropdown').style.display = 'none'
+        drop = true 
+    }
+    
+    console.log(drop)
+}
+
 document.getElementById("submit").addEventListener("click", previewMessage)
 document.getElementById("popup-close").addEventListener("click", closePopup)
 document.addEventListener("keypress", nameEnter)

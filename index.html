@@ -5,10 +5,10 @@
 <head>
     <title>RevoU SEFC</title>
     <link rel="stylesheet" href="CSS/index.css">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <link rel="icon" type="image/x-icon" href="Assets/logo.png">
-    
+
 </head>
 
 <body>
@@ -25,7 +25,19 @@
                 <a href="profile.html"><button class="profile">Profile</button></a>
                 <a href="course.html"><button id="course">Free Course</button></a>
             </div>
+            <div class="burger">
+                <button id="burger-button">
+                    <div class="stripe"></div>
+                    <div class="stripe"></div>
+                    <div class="stripe"></div>
+                </button>
+            </div>
         </nav>
+        <div id="burger-dropdown">
+            <a href="index.html"><button class="menu-burger">Home</button></a>
+            <a href="profile.html"><button class="menu-burger">Profile</button></a>
+            <a href="course.html"><button class="menu-burger" id="course">Free Course</button></a>
+        </div>
     </header>
 
     <!-- MAIN -->
@@ -96,32 +108,37 @@
                                 <td colspan="3" id="constraint-alert"></td>
                             </tr>
                             <tr>
-                                <td>Name</td>
-                                <td>:</td>
-                                <td><input id="user-name" type="text" placeholder="Name"></td>
+                                <td class="col-1">Name</td>
+                                <td class="col-2">:</td>
+                                <td class="col-3"><input id="user-name" type="text" placeholder="Name"></td>
                             </tr>
                             <tr>
-                                <td>Birth Date</td>
-                                <td>:</td>
-                                <td><input id="birth-date" type="date" placeholder="Tanggal Lahir"></td>
+                                <td class="col-1">Birth Date</td>
+                                <td class="col-2">:</td>
+                                <td class="col-3"><input id="birth-date" type="date" placeholder="Tanggal Lahir"></td>
                             </tr>
                             <tr>
-                                <td>Gender</td>
-                                <td>:</td>
-                                <td>
-                                    <input type="radio" name="gender" value="Male" checked>
-                                    <label>Male</label>
-                                    <input type="radio" name="gender" value="Female">
-                                    <label>Female</label>
+                                <td class="col-1">Gender</td>
+                                <td class="col-2">:</td>
+                                <td class="col-3">
+                                    <div>
+                                        <input type="radio" name="gender" value="Male" checked>
+                                        <label>Male</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="gender" value="Female">
+                                        <label>Female</label>
+                                    </div>
                                 </td>
                             </tr>
                             <tr>
-                                <td>Message</td>
-                                <td>:</td>
-                                <td><input type="text" id="user-message" placeholder="Message"></td>
+                                <td class="col-1">Message</td>
+                                <td class="col-2">:</td>
+                                <td class="col-3"><input type="text" id="user-message" placeholder="Message"></td>
                             </tr>
                             <tr>
-                                <td colspan="3"><button id="submit" type="button">Submit</button></td>
+                                <td class="row-submit" colspan="3"><button id="submit" type="button">Submit</button>
+                                </td>
                             </tr>
                         </table>
                     </form>
@@ -154,16 +171,19 @@
 <div id="input-name">
     <div class="popup-logo">
         <img src="Assets/logo.png">
-        <div class="popup-devider"></div>
+        <div class="popup-divider"></div>
     </div>
     <form name="input-guest-name">
         <label class="popup-message"> Hello, nama kamu siapa ?</label>
         <br>
         <input class="popup-message" name="guest-name" type="text">
     </form>
+    <div id="popup-close">
+        <a class="popup-x" href="index.html">X</a>
+    </div>
 </div>
 
-<a id="popup-close" href="index.html">X</a>
+
 
 
 <!-- DOM JS SCRIPT -->

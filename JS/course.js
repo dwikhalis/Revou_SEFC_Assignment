@@ -1,3 +1,22 @@
+//! BURGER DROPDOWN
+document.getElementById("burger-button").addEventListener("click", burgerDrop)
+
+let drop = true
+
+function burgerDrop (event) {
+    
+    if (event.isTrusted === true && drop === true) {
+        document.getElementById('burger-dropdown').style.display = 'flex'
+        drop = false
+    } else {
+        document.getElementById('burger-dropdown').style.display = 'none'
+        drop = true 
+    }
+    
+    console.log(drop)
+}
+
+
 document.getElementById('dm').addEventListener('click', showMCDM)
 document.getElementById('da').addEventListener('click', showMCDA)
 document.getElementById('pm').addEventListener('click', showMCPM)
