@@ -1,4 +1,5 @@
 //! BANNER SLIDE
+
 let slideNum = 5
 let slideCount = 0
 
