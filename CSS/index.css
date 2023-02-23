@@ -542,6 +542,10 @@ footer > p {
 		width: 100%;
 	}
 
+	#birth-date {
+		height: 46px;
+	}
+
 	.col-3 > div > input[type=radio]{
 		height: 40px;
 		width: 40px;
@@ -638,9 +642,9 @@ footer > p {
 
 }
 
-/* 425 */
+/* 428 */
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 428px) {
 
 	/* POSITION MAIN */
 	main {
