@@ -68,6 +68,7 @@ nav {
 header {
 	position: fixed;
 	width: 100%;
+	z-index: 2;
 }
 
 .menu {
@@ -138,17 +139,6 @@ main {
 	margin: 30px 0 30px 0;
 	height: 500px;
 	width: 100%;
-
-}
-
-.banner > img {
-	width: 100%;
-	object-fit: cover;
-	object-position: top;
-}
-
-.banner-img {
-	display: none;
 }
 
 .slide {
@@ -168,6 +158,16 @@ main {
 	font-size: 40px;
 	color: white;
 	font-weight: 1000;
+}
+
+.banner > img {
+	width: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+
+.banner-img {
+	display: none;
 }
 
 /* HEADQUARTER STYLE */
@@ -437,6 +437,25 @@ footer > p {
 
 @media only screen and (max-width: 800px) {
 	
+	/* RESIZE BANNER */
+
+	.banner {
+		margin: 30px 0 30px 0;
+		height: 235px;
+	}
+
+	.slide {
+		height: 235px;
+	}
+	
+	.slide-button {
+		padding: 10px;
+		width: 50px;
+		font-size: 40px;
+		font-weight: 1000;
+	}
+	
+
 	/* RESIZE FIGURE */
 	.container-headquarter > figure {
 		margin: 50px 10px 0 10px;
@@ -465,7 +484,6 @@ footer > p {
 		text-align: center;
 	}
 
-	
 	/* REVAMP FORM */
 	.col-1, .col-3 {
 		width: 100%;
@@ -608,6 +626,23 @@ footer > p {
 
 @media only screen and (max-width: 425px) {
 
+	/* RESIZE BANNER */
+
+	.banner {
+		margin: 30px 0 30px 0;
+		height: 130px;
+	}
+	
+	.slide {
+		height: 130px;
+	}
+		
+	.slide-button {
+		width: 40px;
+		font-size: 40px;
+		font-weight: 1000;
+	}
+	
 	/* POSITIONING MAIN */
 	main {
 		padding-top: 160px;
@@ -628,6 +663,14 @@ footer > p {
 		margin-bottom: 15px;
 	}
 
+	.welcome-head > p {
+		padding: 0 30px 0 40px;
+	}
+	
+	h1 {
+		padding: 0 40px 0 40px;
+	}
+
 	.fc {
 		font-size: 25px;
 	}
@@ -638,15 +681,23 @@ footer > p {
 
 	/* RESIZE FIGURE */
 	.container-headquarter > figure > img {
-		width: 150px;
-		height: 150px;
+		width: 125px;
+		height: 125px;
 	}
 
 	.container-headquarter > figure > figcaption {
 		font-size: large;
 	}
 
-	/* RESIZE MESSAGE FORM */
+	/* RESIZE MESSAGE */
+	#message {
+		margin-top: 50px;
+	}
+
+	.message-part {
+		margin: 0 40px 0 30px;
+	}
+	
 	#constraint-alert {
 		font-size: 14px;
 		justify-content: center;
@@ -704,68 +755,27 @@ footer > p {
 	
 }
 
-
-@media only screen and (max-width: 320px) {
-
-	/* POSITION MAIN */
-	main {
-		padding-top: 120px;
-	}
-	
-	/* RESIZE NAV */
-	nav {
-		height: 70px;
-	}
-	
-	.logo > a > img {
-		width: 50px;
-	}
-
-	.logo > h4 {
-		font-size: small;
-	}
-
-
-	/* RESIZE WELCOME */
-	h1 {
-		font-size: 20px;
-		margin-bottom: 15px;
-	}
-
-	.fc {
-		font-size: 20px;
-	}
-
-	.welcome-head > p {
-		font-size: 15px;
-	}
-
-	
-	/* RESIZE GENDER */
-	.col-3 > div > input[type=radio]{
-		height: 20px;
-		width: 20px;
-		margin: 0 10px 0 10px;
-	}
-
-	/* RESIZE FIGURE */
-
-	.container-headquarter > figure > img {
-		width: 100px;
-		height: 100px;
-	}
-
-	.container-headquarter > figure > figcaption {
-		font-size: large;
-	}
-
-}
-
-@media only screen and (max-width: 356px) {
+@media only screen and (max-width: 375px) {
 		
 	/* POSITION MAIN */
 	main {
-		padding-top: 100px;
+		padding-top: 115px;
+	}
+
+	/* RESIZE BANNER */
+
+	.banner {
+		height: 115px;
+	}
+	
+	.slide {
+		height: 120px;
+	}
+		
+	.slide-button {
+		width: 40px;
+		font-size: 40px;
+		font-weight: 1000;
 	}
 		
 	/* RESIZE NAV */
@@ -783,6 +793,10 @@ footer > p {
 		margin-bottom: 10px;
 	}
 
+	.welcome-head > p {
+		padding: 0 30px 0 30px;
+	}
+
 	.fc {
 		font-size: 20px;
 	}
@@ -796,7 +810,22 @@ footer > p {
 		font-size: medium;
 	}
 
+	/* RESIZE HEADQUARTER FIGURE */
+
+	.container-headquarter > figure > img {
+		width: 107px;
+		height: 107px;
+	}
+
 	/* RESIZE MESSAGE */
+	
+	.message-part {
+		margin: 0 30px 0 20px;
+	}
+
+	h1 {
+		padding: 0 30px 0 30px;
+	}
 	
 	#message {
 		margin-bottom: 50px;
@@ -851,5 +880,75 @@ footer > p {
 		padding: 5px;
 		font-size: 12px;
 	}
+
+	@media only screen and (max-width: 320px) {
+
+	/* POSITION MAIN */
+	main {
+		padding-top: 120px;
+	}
+	
+	/* RESIZE NAV */
+	nav {
+		height: 70px;
+	}
+	
+	.logo > a > img {
+		width: 50px;
+	}
+
+	.logo > h4 {
+		font-size: small;
+	}
+
+	/* RESIZE WELCOME */
+	h1 {
+		font-size: 20px;
+		margin-bottom: 15px;
+	}
+
+	.fc {
+		font-size: 20px;
+	}
+
+	.welcome-head > p {
+		font-size: 15px;
+	}
+
+	/* RESIZE BANNER */
+	.banner {
+		margin: 30px 0 30px 0;
+		height: 99px;
+	}
+	
+	.slide {
+		height: 99px;
+	}
+		
+	.slide-button {
+		width: 40px;
+		font-size: 40px;
+		font-weight: 1000;
+	}
+
+	/* RESIZE GENDER */
+	.col-3 > div > input[type=radio]{
+		height: 20px;
+		width: 20px;
+		margin: 0 10px 0 10px;
+	}
+
+	/* RESIZE FIGURE */
+
+	.container-headquarter > figure > img {
+		width: 100px;
+		height: 100px;
+	}
+
+	.container-headquarter > figure > figcaption {
+		font-size: large;
+	}
+
+}
 
 }
