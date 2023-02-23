@@ -3,7 +3,7 @@
 let slideNum = 5
 let slideCount = 0
 
-document.getElementById(`banner${slideCount}`).style.display = 'block'
+// document.getElementById(`banner${slideCount}`).style.display = 'block'
 
 document.getElementById("next").addEventListener("click", nextSlide)
 document.getElementById("prev").addEventListener("click", prevSlide)
