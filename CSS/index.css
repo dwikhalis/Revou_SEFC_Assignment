@@ -270,7 +270,7 @@ tr {
 
 #birth-date {
 	width: auto; 
-	height: 20px; 
+	height: 30px; 
     border-color: rgba(0, 0, 0, 0);
     position: absolute;
 	color: rgb(103, 103, 103); 
@@ -540,10 +540,6 @@ footer > p {
 
 	.message-input, form, table {
 		width: 100%;
-	}
-
-	#birth-date {
-		height: 46px;
 	}
 
 	.col-3 > div > input[type=radio]{
