@@ -638,17 +638,23 @@ footer > p {
 
 }
 
+/* 425 */
+
 @media only screen and (max-width: 425px) {
 
+	/* POSITION MAIN */
+	main {
+		padding-top: 115px;
+	}
+	
 	/* RESIZE BANNER */
-
 	.banner {
 		margin: 30px 0 30px 0;
-		height: 130px;
+		height: 115px;
 	}
 	
 	.slide {
-		height: 130px;
+		height: 120px;
 	}
 		
 	.slide-button {
@@ -657,14 +663,13 @@ footer > p {
 		font-weight: 1000;
 	}
 	
-	/* POSITIONING MAIN */
-	main {
-		padding-top: 160px;
+	/* RESIZE NAV */
+	nav {
+		height: 70px;
 	}
 	
-	/* RESIZE NAV */
 	.logo > a > img {
-		width: 70px;
+		width: 40px;
 	}
 
 	.logo > h4 {
@@ -673,24 +678,25 @@ footer > p {
 	
 	/* RESIZE WELCOME */
 	h1 {
-		font-size: 25px;
-		margin-bottom: 15px;
+		font-size: 20px;
+		margin-bottom: 10px;
 	}
 
 	.welcome-head > p {
-		padding: 0 30px 0 40px;
+		padding: 0 30px 0 30px;
 	}
-	
+
 	h1 {
 		padding: 0 40px 0 40px;
 	}
 
 	.fc {
-		font-size: 25px;
+		font-size: 20px;
 	}
 
 	.welcome-head > p {
-		font-size: 20px;
+		font-size: 15px;
+		padding-bottom: 7px;
 	}
 
 	/* RESIZE FIGURE */
@@ -779,6 +785,8 @@ footer > p {
 	}
 	
 }
+
+/* 375 */
 
 @media only screen and (max-width: 375px) {
 		
@@ -915,19 +923,6 @@ footer > p {
 		padding-top: 120px;
 	}
 	
-	/* RESIZE NAV */
-	nav {
-		height: 70px;
-	}
-	
-	.logo > a > img {
-		width: 50px;
-	}
-
-	.logo > h4 {
-		font-size: small;
-	}
-
 	/* RESIZE WELCOME */
 	h1 {
 		font-size: 20px;

@@ -343,11 +343,24 @@ footer > p {
 
 @media only screen and (max-width: 425px) {
     
+    /* POSITION MAIN */
+	main {
+		padding-top: 30px;
+	}
+    
     /* RESIZE NAV */
+	nav {
+		height: 70px;
+	}
+	
 	.logo > a > img {
-		width: 70px;
+		width: 40px;
 	}
 
+	.logo > h4 {
+		font-size: medium;
+	}
+    
 	/* RESIZE WELCOME */
 	h1 {
 		font-size: 25px;

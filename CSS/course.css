@@ -306,14 +306,22 @@ footer > p {
 
 @media only screen and (max-width: 425px) {
     
-    /* POSITIONING MAIN */
+    /* POSITION MAIN */
 	main {
-		padding-top: 170px;
+		padding-top: 115px;
 	}
 	
 	/* RESIZE NAV */
+	nav {
+		height: 70px;
+	}
+	
 	.logo > a > img {
-		width: 70px;
+		width: 40px;
+	}
+
+	.logo > h4 {
+		font-size: medium;
 	}
 
 	/* RESIZE WELCOME */
