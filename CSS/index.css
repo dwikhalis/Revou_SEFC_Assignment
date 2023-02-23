@@ -881,7 +881,9 @@ footer > p {
 		font-size: 12px;
 	}
 
-	@media only screen and (max-width: 320px) {
+}
+
+@media only screen and (max-width: 320px) {
 
 	/* POSITION MAIN */
 	main {
@@ -951,4 +953,14 @@ footer > p {
 
 }
 
+
+
+/* SOLVING BIRTH DATE FORM SHRUNGKEN ON MOBILE */
+/* experiment on iphone SE 375 x 667 */
+@media only screen and (max-width: 375px) {
+	#birth-date {
+		min-width: 300px;
+	}
 }
+
+
