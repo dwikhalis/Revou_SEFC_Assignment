@@ -1,8 +1,9 @@
 # Revou_SEFC_Assignment
 Mini project assignment for Revou SEFC Feb 2023
 
-![web_1](https://user-images.githubusercontent.com/105730965/220816054-0e05cb52-de6b-4907-9d1e-90aea66eeeca.jpg)
 ![mobile_1](https://user-images.githubusercontent.com/105730965/220671443-2aa5e53a-cd47-4452-9093-41f29640a4fc.jpeg)
+![web_1](https://user-images.githubusercontent.com/105730965/220816440-53db5d1b-d907-413c-b93d-bb8d1570caf7.jpg)
+
 ![1_wireframe_index](https://user-images.githubusercontent.com/105730965/220663893-41eb14b4-a33a-4397-b283-25650c70b346.jpg)
 ![2_wireframe_profile](https://user-images.githubusercontent.com/105730965/220663920-0570a810-793a-404e-b91f-3f12cc9ed74a.jpg)
 ![3_wireframe_course](https://user-images.githubusercontent.com/105730965/220663938-f4fdef1c-1677-4fd0-8048-45fa9c5da937.jpg)
