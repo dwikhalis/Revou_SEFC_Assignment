@@ -119,7 +119,16 @@
                             <tr>
                                 <td class="col-1">Birth Date</td>
                                 <td class="col-2">:</td>
-                                <td class="col-3"><input id="birth-date" type="date" placeholder="Tanggal Lahir"></td>
+                                <td class="col-3">
+                                    
+                                    <!-- FIXING SHRUNGKEN FORM ON MOBILE -->
+                                    <input type="text" placeholder="Select a date" onfocus="$(this).hide().next().attr('hidden',false).focus();"/>
+                                    <input id="birth-date" type="datetime-local"  hidden="true">
+
+                                    <!-- <input id="birth-date" type="date" placeholder="Tanggal Lahir"> -->
+
+
+                                </td>
                             </tr>
                             <tr>
                                 <td class="col-1">Gender</td>
