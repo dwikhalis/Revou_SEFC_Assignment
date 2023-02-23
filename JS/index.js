@@ -1,3 +1,15 @@
+// coba click() birth date
+
+// document.getElementById("click-date").addEventListener("click", date)
+
+function date() {
+    document.getElementById("birth-date").click();
+
+    return false
+}
+
+
+
 //! BANNER SLIDE
 
 let slideNum = 5
@@ -85,6 +97,8 @@ function validate() {
     let nullForm = []
     let userGender = document.getElementsByName('gender')
     let date = new Date()
+
+    console.log(birthDate)
 
     if (userName === "") {
         nullForm.push(" Name")

@@ -261,9 +261,23 @@ tr {
 	margin-top: 5px;
 }
 
-#user-name, #birth-date, #user-message {
+#user-name, #birth-date, #user-message, 
+#date-container {
 	width: 100%;
 	font-size: 20px;
+	text-align: center;
+}
+
+#birth-date {
+	width: auto; 
+	height: 20px; 
+    border-color: rgba(0, 0, 0, 0);
+    position: absolute;
+	color: rgb(103, 103, 103); 
+}
+
+#date-container {
+	pointer-events: none;
 }
 
 #preview-box {
@@ -712,6 +726,17 @@ footer > p {
 		height: 30px;
 	}
 
+	/* RESIZE DATE CONTAINER */
+	#date-container {
+		font-size: 14px;
+		height: 30px;
+	}
+
+	/* RESIZE BIRTH DATE */
+	#birth-date {
+		height: 20px;
+	}
+
 	/* RESIZE GENDER */
 	.col-3 > div > input[type=radio]{
 		height: 20px;
@@ -840,9 +865,9 @@ footer > p {
 		font-size: 15px;
 	}
 
-	#user-name, #birth-date, #user-message {
-		font-size: 15px;
-		height: 30px;
+	/* RESIZE BIRTH DATE */
+	#birth-date {
+		height: 20px;
 	}
 
 	#submit {
@@ -957,10 +982,19 @@ footer > p {
 
 /* SOLVING BIRTH DATE FORM SHRUNGKEN ON MOBILE */
 /* experiment on iphone SE 375 x 667 */
-@media only screen and (max-width: 375px) {
-	#birth-date {
-		min-width: 300px;
+
+/* @media only screen and (max-width: 800px) {
+	.ori-date {
+		display: none;
 	}
 }
+
+@media only screen and (min-width: 800px) {
+
+	.date-mobile, #date-container {
+		display: none;
+		visibility: none;
+	}
+} */
 
 
